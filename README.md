@@ -35,7 +35,7 @@ times, specifically medication, appointment, physical activity, and game reminde
 ## Getting started
 To get the local copy of this repository, please run the following commands on your terminal:
 
-```$ git clone https://github.com/PizaaRiaaa/Synapse.git```
+```$ git clone https://github.com/jennmaa/Synapse.git```
 
 * project files for wearable: [click here](synapsewear)
 
