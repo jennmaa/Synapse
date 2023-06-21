@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_senior_games"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splash_screen_background"
+    tools:context=".screen.senior.modules.fragments.GamesFragment">
+
+<!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/back"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_back_white" />
+    </LinearLayout>
+
+<ImageView
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="30dp"
+    android:background="@drawable/image_elavation"
+    android:elevation="5dp"
+    android:src="@drawable/ic_brain" />
+
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/white"
+    style="@style/CustomCardViewStyle">
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarThumbVertical="@color/white">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <!-- tic tac toe -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnTicTacToe"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/horizontal_bg_7">
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="160dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/inter_bold"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:text="Tic Tac Toe"/>
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="160dp"
+                        android:fontFamily="@font/redhat_display_medium"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:text="The player who aligns their three imprints in flat, vertical, or slanting line is the Winner!"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_marginStart="20dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="5dp">
+
+                  <ImageView
+                      android:layout_width="120sp"
+                      android:layout_height="120sp"
+                      android:layout_gravity="center"
+                      android:translationZ="60dp"
+                      android:scaleType="centerCrop"
+                      android:id="@+id/profileImg"
+                      android:src="@drawable/ic_tic_tac_toe_cover"
+                      xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </FrameLayout>
+
+        <!-- trivia quiz -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnTriviaQuiz"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/horizontal_bg_4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="160dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="Trivia Quiz"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="160dp"
+                        android:fontFamily="@font/redhat_display_medium"
+                        android:text="Choose the correct answer from 4 possible ones. Tons of questions are waiting."
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_marginStart="20dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="5dp">
+
+                    <ImageView
+                        android:layout_width="120sp"
+                        android:layout_height="120sp"
+                        android:layout_gravity="center"
+                        android:translationZ="60dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_trivia_quiz_cover"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </FrameLayout>
+
+        <!-- Math quiz -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnMath"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginBottom="?actionBarSize"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/horizontal_bg_6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="160dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="Math Quiz"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="160dp"
+                        android:fontFamily="@font/redhat_display_medium"
+                        android:text="Improve your mental calculation skills, logic, concentation, and reaction of mind. Simple and Challenging!"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_marginStart="20dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="5dp">
+
+                <ImageView
+                    android:layout_width="120sp"
+                    android:layout_height="120sp"
+                    android:layout_gravity="center"
+                    android:translationZ="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_math_quiz_cover"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+   <!-- </ScrollView> -->
+
+</com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

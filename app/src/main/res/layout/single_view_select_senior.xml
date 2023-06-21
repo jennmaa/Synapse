@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_margin="10dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/search_view_stroke"
+        android:elevation="20dp"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/horizontal_bg_3"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivSeniorProfilePic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/carer_profile_pic"
+                android:backgroundTint="@color/carer_profile_pic"
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="18dp"
+                    android:src="@drawable/ic_settings_no_bg"/>
+
+                <TextView
+                    android:id="@+id/tvSeniorFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/redhat_display_bold"
+                    android:textColor="@color/grey5"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvSeniorBarangay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/redhat_display_medium"
+                    android:textColor="@color/grey5"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvSeniorCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/redhat_display_semibold"
+                    android:textColor="@color/grey5"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvSeniorAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/redhat_display_semibold"
+                    android:textColor="@color/grey5"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/btnSelectSenior"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_gravity="bottom|end"
+            android:background="#C8C8C8"
+            android:clickable="true"
+            android:focusable="true"
+            app:contentPadding="9dp"
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            app:srcCompat="@drawable/ic_down_right" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

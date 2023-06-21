@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screen.carer.SelectSenior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#565555"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvSignout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="#565555"
+            android:contentDescription="@string/back"
+            android:text="Sign out"
+            android:drawableStart="@drawable/ic_signout"
+            android:drawablePadding="12dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvAddSenior"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="#565555"
+            android:contentDescription="@string/back"
+            android:text="Add senior"
+            android:drawableStart="@drawable/ic_add_senior"
+            android:drawablePadding="12dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvSample"
+            android:layout_width="0dp"
+            android:layout_margin="18dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Set Medicine"
+            android:textColor="@color/grey5"
+            android:fontFamily="@font/redhat_display_semibold"
+            android:textSize="17sp"/>
+
+        <ImageView
+            android:id="@+id/ivProfilePic"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/carer_profile_pic"
+            android:backgroundTint="@color/carer_profile_pic"
+            android:contentDescription="Carer profile pic"
+            android:scaleType="fitCenter" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp">
+
+        <com.google.android.material.card.MaterialCardView
+            app:cardBackgroundColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/osca_background"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="60dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/osca_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="center|bottom"
+                android:textSize="40sp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="OSCA"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your senior"
+        android:textColor="@color/grey7"
+        android:fontFamily="@font/redhat_display_semibold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"/>
+
+    <!-- recycle view for current carer assigned seniors -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_seniors"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+
+</LinearLayout>
